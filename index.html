@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parallax</title>
+        <meta charset="utf-8">
+        <style>
+            /*Configuração padrão da página
+            -------------------------------*/
+            body, html {
+                margin: 0;
+                font: 16px "Lato", sans-serif;
+                color: #777;
+                height: 100%;                
+            }
+            
+            .conteudo {
+                color: #777;
+                background-color: white;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                text-align: center;
+                color: #111;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            /*Efeito Parallax
+            -----------------*/
+            .caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6 {
+                height: 100%;
+                opacity: 0.8;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                position: relative;
+
+            }
+
+            .caixa1 {
+                background-image: url(imagens/imagem1.jpg);
+            }
+
+            .caixa2 {
+                background-image: url(imagens/imagem2.jpg);
+            }
+
+            .caixa3 {
+                background-image: url(imagens/imagem3.jpg);
+            }
+
+            .caixa4{
+                background-image: url(imagens/imagem4.jpg);
+            }
+
+            .caixa5 {
+                background-image: url(imagens/imagem5.jpg);
+            }
+
+            .caixa6 {
+                background-image: url(imagens/imagem6.jpg);
+            }
+
+            .conteudos {
+                position: absolute;
+                left: 0;
+                top: 45%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .conteudos span.frases {
+                background-color: #111;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 5px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="caixa1">
+            <div class="conteudos">
+                <span class="frases">PASSEIO DE BALÕES</span>
+            </div>
+        </div>
+    
+        <div class="conteudo">
+            <h3>É divertido?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ac nisl et malesuada. Sed tempor, nisi id fringilla porttitor, risus dolor laoreet lacus, eu dapibus neque erat sit amet ipsum. Sed auctor leo vel risus scelerisque, nec mattis neque consectetur. Nulla congue blandit velit, a malesuada lacus sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sem dui, pulvinar nec imperdiet at, aliquet in dui. Vivamus porta ultrices vestibulum. Fusce dictum ex nibh, sed blandit dui tincidunt sed.</p>
+            <p>Integer congue congue odio quis ornare. Nunc turpis ante, laoreet nec consectetur ac, gravida eu odio. Nullam ut sapien et quam euismod dignissim. Sed facilisis erat accumsan, sagittis dui ac, tempus tortor. Proin elementum enim felis. Morbi massa nisi, consectetur eget aliquet et, dapibus a ante. Suspendisse sollicitudin, purus eget pellentesque convallis, ipsum velit ultrices odio, vitae maximus nisi nisl nec justo. Nulla quis libero non nisl fermentum aliquet.</p>
+        </div>
+    
+        <div class="caixa2">
+            <div class="conteudos">
+                <span class="frases">PEGANDO A ESTRADA</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Principais ferramentas </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ac nisl et malesuada. Sed tempor, nisi id fringilla porttitor, risus dolor laoreet lacus, eu dapibus neque erat sit amet ipsum. Sed auctor leo vel risus scelerisque, nec mattis neque consectetur. Nulla congue blandit velit, a malesuada lacus sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sem dui, pulvinar nec imperdiet at, aliquet in dui. Vivamus porta ultrices vestibulum. Fusce dictum ex nibh, sed blandit dui tincidunt sed.</p>
+            <p>Integer congue congue odio quis ornare. Nunc turpis ante, laoreet nec consectetur ac, gravida eu odio. Nullam ut sapien et quam euismod dignissim. Sed facilisis erat accumsan, sagittis dui ac, tempus tortor. Proin elementum enim felis. Morbi massa nisi, consectetur eget aliquet et, dapibus a ante. Suspendisse sollicitudin, purus eget pellentesque convallis, ipsum velit ultrices odio, vitae maximus nisi nisl nec justo. Nulla quis libero non nisl fermentum aliquet.</p>
+        </div>
+
+        <div class="caixa3">
+            <div class="conteudos">
+                <span class="frases">PÔR DO SOL</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Leste ou Oeste?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ac nisl et malesuada. Sed tempor, nisi id fringilla porttitor, risus dolor laoreet lacus, eu dapibus neque erat sit amet ipsum. Sed auctor leo vel risus scelerisque, nec mattis neque consectetur. Nulla congue blandit velit, a malesuada lacus sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sem dui, pulvinar nec imperdiet at, aliquet in dui. Vivamus porta ultrices vestibulum. Fusce dictum ex nibh, sed blandit dui tincidunt sed.</p>
+            <p>Integer congue congue odio quis ornare. Nunc turpis ante, laoreet nec consectetur ac, gravida eu odio. Nullam ut sapien et quam euismod dignissim. Sed facilisis erat accumsan, sagittis dui ac, tempus tortor. Proin elementum enim felis. Morbi massa nisi, consectetur eget aliquet et, dapibus a ante. Suspendisse sollicitudin, purus eget pellentesque convallis, ipsum velit ultrices odio, vitae maximus nisi nisl nec justo. Nulla quis libero non nisl fermentum aliquet.</p>
+        </div>
+
+        <div class="caixa4">
+            <div class="conteudos">
+                <span class="frases">MONTANHAS</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Vamos escalar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ac nisl et malesuada. Sed tempor, nisi id fringilla porttitor, risus dolor laoreet lacus, eu dapibus neque erat sit amet ipsum. Sed auctor leo vel risus scelerisque, nec mattis neque consectetur. Nulla congue blandit velit, a malesuada lacus sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sem dui, pulvinar nec imperdiet at, aliquet in dui. Vivamus porta ultrices vestibulum. Fusce dictum ex nibh, sed blandit dui tincidunt sed.</p>
+            <p>Integer congue congue odio quis ornare. Nunc turpis ante, laoreet nec consectetur ac, gravida eu odio. Nullam ut sapien et quam euismod dignissim. Sed facilisis erat accumsan, sagittis dui ac, tempus tortor. Proin elementum enim felis. Morbi massa nisi, consectetur eget aliquet et, dapibus a ante. Suspendisse sollicitudin, purus eget pellentesque convallis, ipsum velit ultrices odio, vitae maximus nisi nisl nec justo. Nulla quis libero non nisl fermentum aliquet.</p>
+        </div>
+
+        <div class="caixa5">
+            <div class="conteudos">
+                <span class="frases">OCEANO E SUAS BELEZAS</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Bioma das águas</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ac nisl et malesuada. Sed tempor, nisi id fringilla porttitor, risus dolor laoreet lacus, eu dapibus neque erat sit amet ipsum. Sed auctor leo vel risus scelerisque, nec mattis neque consectetur. Nulla congue blandit velit, a malesuada lacus sagittis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sem dui, pulvinar nec imperdiet at, aliquet in dui. Vivamus porta ultrices vestibulum. Fusce dictum ex nibh, sed blandit dui tincidunt sed.</p>
+            <p>Integer congue congue odio quis ornare. Nunc turpis ante, laoreet nec consectetur ac, gravida eu odio. Nullam ut sapien et quam euismod dignissim. Sed facilisis erat accumsan, sagittis dui ac, tempus tortor. Proin elementum enim felis. Morbi massa nisi, consectetur eget aliquet et, dapibus a ante. Suspendisse sollicitudin, purus eget pellentesque convallis, ipsum velit ultrices odio, vitae maximus nisi nisl nec justo. Nulla quis libero non nisl fermentum aliquet.</p>
+        </div>
+
+        <div class="caixa6">
+            <div class="conteudos">
+                <span class="frases">ISSO É TUDO!</span>
+            </div>
+        </div>   
+    </body>
+</html>
